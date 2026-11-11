@@ -4,41 +4,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>404 | Page Not Found - NESTORA</title>
+  <title>404 | SKYORA</title>
   <link rel="stylesheet" href="style.css">
+
   <style>
     body {
       min-height: 100vh;
-      background: #f7f5ef;
+      background: #f5f5ef;
       display: flex;
       align-items: center;
       justify-content: center;
       padding: 25px;
     }
 
-    .error-container {
-      width: 100%;
+    .error-box {
       max-width: 1000px;
-      min-height: 520px;
+      width: 100%;
+      min-height: 530px;
       display: grid;
       grid-template-columns: 1fr 1fr;
       background: white;
-      box-shadow: 0 15px 60px rgba(0,0,0,.08);
+      box-shadow: 0 15px 50px rgba(0,0,0,.08);
     }
 
     .error-image {
-      min-height: 520px;
-      position: relative;
+      min-height: 530px;
     }
 
     .error-image img {
       height: 100%;
-      position: absolute;
-      inset: 0;
     }
 
     .error-content {
-      padding: 60px 45px;
+      padding: 55px 45px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -46,61 +44,62 @@
 
     .error-logo {
       font-family: 'Playfair Display', serif;
-      font-size: 28px;
-      color: #24372e;
-      margin-bottom: 65px;
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 55px;
     }
 
     .error-logo span {
-      color: #c49a62;
+      color: #e9a45b;
     }
 
     .error-number {
       font-family: 'Playfair Display', serif;
-      font-size: 105px;
+      font-size: 110px;
+      color: #e9a45b;
       line-height: 1;
-      color: #c49a62;
     }
 
     .error-content h1 {
       font-family: 'Playfair Display', serif;
       font-size: 32px;
-      color: #24372e;
+      color: #142b30;
       margin: 15px 0;
     }
 
     .error-content p {
-      color: #777b73;
-      font-size: 14px;
+      font-size: 13px;
       line-height: 1.9;
-      margin-bottom: 30px;
+      color: #727c7b;
+      margin-bottom: 28px;
     }
 
     .home-button {
-      display: inline-block;
-      background: #24372e;
+      background: #142b30;
       color: white;
-      padding: 16px 25px;
+      display: inline-block;
       width: fit-content;
+      padding: 16px 25px;
       font-size: 12px;
-      font-weight: 700;
+      font-weight: bold;
       transition: .3s;
     }
 
     .home-button:hover {
-      background: #c49a62;
+      background: #e9a45b;
+      color: #142b30;
       transform: translateY(-3px);
     }
 
-    .error-note {
-      margin-top: 45px;
+    .error-footer {
+      color: #e9a45b;
       font-size: 10px;
       letter-spacing: 2px;
-      color: #c49a62;
+      margin-top: 45px;
     }
 
     @media(max-width: 650px) {
-      .error-container {
+      .error-box {
         grid-template-columns: 1fr;
       }
 
@@ -113,7 +112,7 @@
       }
 
       .error-logo {
-        margin-bottom: 35px;
+        margin-bottom: 30px;
       }
 
       .error-number {
@@ -126,43 +125,45 @@
     }
   </style>
 </head>
+
 <body>
 
-  <main class="error-container">
+  <main class="error-box">
 
     <div class="error-image">
       <img
-        src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=900"
-        alt="Beautiful Nestora interior">
+        src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=900"
+        alt="Beautiful mountain destination">
     </div>
 
     <div class="error-content">
 
       <a href="index.html" class="error-logo">
-        NEST<span>ORA.</span>
+        SKY<span>ORA.</span>
       </a>
 
-      <p class="eyebrow">OOPS! SOMETHING WENT WRONG</p>
+      <div class="eyebrow">OOPS! WRONG DESTINATION</div>
 
       <div class="error-number">404</div>
 
-      <h1>This space is empty.</h1>
+      <h1>Lost Your Way?</h1>
 
       <p>
-        Looks like the page you're searching for has
-        moved or doesn't exist. Don't worry, your
-        beautiful home journey is just one click away.
+        Looks like this destination doesn't exist.
+        Every great journey has a wrong turn.
+        Let's take you back to where your adventure begins.
       </p>
 
       <a href="index.html" class="home-button">
         ← BACK TO HOME
       </a>
 
-      <div class="error-note">
-        NESTORA · DESIGNED FOR BEAUTIFUL LIVING
+      <div class="error-footer">
+        SKYORA · EXPLORE BEYOND LIMITS
       </div>
 
     </div>
+
   </main>
 
 </body>
